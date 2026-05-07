@@ -10,5 +10,11 @@ int main() {
 
   printf("Aksess memory dari pointer %p \n", pntr);
   printf("Akses value dari memory pointer %d \n", *pntr);
+
+  // pointer to ponter
+  // menyimpan alamat ponter dari variabel pointer
+  int **ppntr = &pntr;
+  printf("Alamat / Value dari pntr disimpan di ppntr %p \n", ppntr);
+  printf("Akses value pntr %d", **ppntr);
   return 0;
 }
